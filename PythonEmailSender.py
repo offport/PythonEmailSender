@@ -33,8 +33,8 @@ def send_email():
         recipient = request.form['recipient']
         subject = request.form['subject']
         body = request.form['body']
-        email = request.form['email']
-        password = request.form['password']
+        ##email = request.form['email']
+        ##password = request.form['password']
         try:
             server = smtplib.SMTP('smtp.gmail.com', 587)
             server.ehlo()
